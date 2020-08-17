@@ -12,7 +12,7 @@ def user_login(request):
             data = form.cleaned_data
             user = authenticate(request,
                                 username=data['username'],
-                                password=data[' password'])
+                                password=data['password'])
 
             if user:
                 if user.is_active:
@@ -20,9 +20,9 @@ def user_login(request):
                     return HttpResponse('Authenticated Users')
                 return HttpResponse('Disabled Account')
             return HttpResponse('Invalid Login')
-        else:
-            form = LoginForm()
-            return render(request, 'account/login.html', {'form':form})
+    else:
+        form = LoginForm()
+        return render(request, 'account/login.html', {'form':form})
 
 
 # Create your views here.

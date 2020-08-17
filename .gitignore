@@ -1,17 +1,16 @@
 #ProjectBase
-src/project/mediafiles
-src/project/staticfiles
-src/project/mediafiles
+src/bookers/mediafiles
+src/bookers/staticfiles
+src/bookers/mediafiles
 src/resources/static/lib
-src/proxy-service-provider/settings/staticfiles/
-src/proxy-service-provider/settings/mediafiles/
-src/proxy-service-provider/static/
-src/proxy-service-provider/media/
-src/proxy-service-provider/settings/main.py
+src/bookers/settings/staticfiles/
+src/bookers/settings/mediafiles/
+src/bookers/static/
+src/bookers/media/
+src/bookers/settings/main.py
 src/log/
-src/proxy-service-provider/settings/log/
+src/bookers/settings/log/
 src/htmlcov/
-src/google_drive_upload/.master_credentials/
 web_app/app/settings/constants.js
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -118,11 +117,6 @@ migrations/
 # Ignore all sass cache and bower lib files
 /nbproject/private/
 
-# sass tmp files
-*.scss~
-/ui-elements/v2/nbproject/private/
-ui_elements/static/lib/
-*.sass-cache/
 
 # Don't check auto-generated stuff into git
 coverage
@@ -137,39 +131,5 @@ npm-debug.log
 web_app/app/static
 
 
-
-
-
 # FRON-END PART
-
-
-
-
-.DS_Store
-front-end/node_modules
-front-end/dist
-front-end/coverage
-
-front-end/tests/e2e/reports/
-front-end/selenium-debug.log
-front-end/chromedriver.log
-
-# local env files
-front-end/.env.local
-front-end/.env.*.local
-
-# Log files
-front-end/npm-debug.log*
-front-end/yarn-debug.log*
-front-end/yarn-error.log*
-
-# Editor directories and files
-front-end/.idea
-front-end/.vscode
-front-end/*.suo
-front-end/*.ntvs*
-front-end/*.njsproj
-front-end/*.sln
-front-end/*.sw*
-src/proxy_service_provider/settings/dev.py
 
